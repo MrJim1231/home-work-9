@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: min(100% - 40px, 1100px);
+  margin-inline: auto;
+  background-color: #EEEFF1;
+}
+
+/* header */
+
+/* header {
+  margin-top: 80px;
+} */
+
+.nav {
+  padding-top: 80px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 49px;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  letter-spacing: 1.7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit; /* При необходимости */
+}
+
+
+/* Увеличиваем отступ между предпоследним и последним элементом */
+.nav__item:nth-last-child(3) {
+  margin-right: 10px;
+}
