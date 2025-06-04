@@ -96,7 +96,7 @@ width: fit-content;
 .about {
   margin-top: 117px;
   margin-left: 62px;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }
 
 .about__title{
@@ -109,12 +109,42 @@ margin-bottom: 42px;
 }
 
 .about__descripition {
-font-family: Roboto;
 font-weight: 400;
 font-size: 16px;
 line-height: 164%;
-letter-spacing: 0%;
+/* letter-spacing: 0%; */
 text-align: center;
 color: #727272;
 margin-bottom: 50px;
 }
+
+/* section projects */
+.projects {
+  background-color: #34547A;
+}
+
+/* section how i work */
+.work {
+  margin-top: 117px;
+  margin-left: 62px;
+  /* background-color: #f8f8f8; */
+}
+
+.work__title{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 42px;
+  }
+  
+  .work__descripition {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  /* letter-spacing: 0%; */
+  text-align: center;
+  color: #727272;
+  margin-bottom: 50px;
+  }
