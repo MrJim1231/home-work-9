@@ -217,3 +217,22 @@ color: #FFFFFF;
     border: 0;
     min-height: 200px;
   }
+
+  /* footer */
+  .footer {
+    background-color: #34547A;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .footer__title {
+    font-size: 21px; 
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+  
+  .footer__description {
+    font-size: 13px; 
+  }
+  
