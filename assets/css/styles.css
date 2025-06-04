@@ -182,11 +182,12 @@ html {
 
 /* section how i work */
 .work {
-  margin-top: 103px;
   margin-left: 14px;
+  background-color: var(--color-light-gray);
 }
 
 .work__title {
+  padding-top: 103px;
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
@@ -199,13 +200,14 @@ html {
   line-height: var(--line-height);
   text-align: center;
   color: var(--color-gray);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   margin-left: -2px;
 }
 
 /* section video */
 .video {
   padding-bottom: 100px;
+  background-color: var(--color-light-gray);
 }
 
 .video__iframe {
