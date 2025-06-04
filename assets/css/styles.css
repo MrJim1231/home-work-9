@@ -18,6 +18,21 @@ html {
   /* background-color: #EEEFF1; */
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  visibility: hidden; /* Optional for fallback support */
+}
+
+
 /* header */
 .header {
   background-color: #EEEFF1;
@@ -95,7 +110,8 @@ width: fit-content;
 /* section about */
 .about {
   margin-top: 117px;
-  margin-left: 62px;
+  margin-left: 118px;
+  margin-bottom: 92px;
   /* background-color: #f8f8f8; */
 }
 
@@ -121,6 +137,38 @@ margin-bottom: 50px;
 /* section projects */
 .projects {
   background-color: #34547A;
+  padding-top: 100px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+}
+
+.projects__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__list {
+  display: flex;
+  gap: 20px;
+}
+
+.projects__list-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.projects__list-item {
+font-weight: 500;
+font-size: 21px;
+line-height: 100%;
+color: #FFFFFF;
+}
+
+.projects__list-subitem {
+font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
 }
 
 /* section how i work */
