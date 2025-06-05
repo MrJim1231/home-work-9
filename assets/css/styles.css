@@ -34,6 +34,11 @@ html {
 .container--sm {
   width: min(100% - 40px, var(--container-secondary));
   margin-inline: auto;
+  /* transform: translateX(4px); */
+}
+
+.about .container--sm {
+  transform: translateX(4px);
 }
 
 .visually-hidden {
