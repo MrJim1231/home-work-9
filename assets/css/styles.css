@@ -34,7 +34,6 @@ html {
 .container--sm {
   width: min(100% - 40px, var(--container-secondary));
   margin-inline: auto;
-  /* transform: translateX(4px); */
 }
 
 .about .container--sm {
@@ -131,7 +130,6 @@ html {
 /* section about */
 .about {
   margin-top: 117px;
-  /* margin-left: 23px; */
   margin-bottom: 92px;
 }
 
@@ -155,15 +153,12 @@ html {
   background-color: var(--color-dark-blue);
   padding-top: 100px;
   padding-bottom: 96px;
-  /* padding-left: 10px; */
 }
 
 .projects__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* justify-content: start; */
-  /* gap: 60px; */
 }
 
 .projects__list {
@@ -210,13 +205,8 @@ html {
 
 /* section how i work */
 .work {
-  /* margin-left: 14px; */
   background-color: var(--color-light-gray);
 }
-
-/* .about .container--sm {
-  transform: translateX(4px);
-} */
 
 .work__title {
   padding-top: 103px;
@@ -225,7 +215,6 @@ html {
   line-height: 100%;
   text-align: center;
   margin-bottom: 42px;
-  /* margin-left: 4px; */
 }
 
 .work__descripition {
@@ -233,7 +222,6 @@ html {
   text-align: center;
   color: var(--color-gray);
   padding-bottom: 50px;
-  /* margin-left: -2px; */
 }
 
 /* section video */
@@ -268,3 +256,59 @@ html {
 .footer__description {
   font-size: 13px;
 }
+
+/* Адаптивность */
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+  .projects__container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    gap: 20px;
+  }
+
+  .projects__list {
+    width: 30%;
+    transform: none; /* отключаем translateX */
+    margin-bottom: 20px;
+  }
+
+  .projects__list:nth-child(n) {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__container {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    gap: 20px;
+  }
+
+  .projects__list {
+    width: 45%; /* два элемента в ряд */
+    margin-bottom: 20px;
+    transform: none; /* убираем сдвиги */
+  }
+
+  .projects__list:nth-child(n) {
+    transform: none; /* отключаем все translateX */
+  }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 375px) {
+  .projects__container {
+    justify-content: center; /* Центрирует элементы по горизонтали */
+  }
+
+  .projects__list {
+    width: 100%; /* Один элемент в ряд */
+  }
+}
+
+
