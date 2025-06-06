@@ -387,18 +387,16 @@ html {
     font-size: 14px;
   }
 
+  .work__title {
+    padding-top: 60px;
+  }
+  
   .projects {
     padding: 60px 0;
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
   }
 }
 
 @media (max-width: 375px) {
-  /* .nav {
-    margin-bottom: 50px;
-  } */
-
   .hero__title {
     font-size: 20px;
   }
