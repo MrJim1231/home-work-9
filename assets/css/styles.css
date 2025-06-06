@@ -141,7 +141,7 @@ html {
   margin-bottom: 42px;
 }
 
-.about__descripition {
+.about__description {
   line-height: var(--line-height);
   text-align: center;
   color: var(--color-gray);
@@ -217,7 +217,7 @@ html {
   margin-bottom: 42px;
 }
 
-.work__descripition {
+.work__description {
   line-height: var(--line-height);
   text-align: center;
   color: var(--color-gray);
@@ -263,6 +263,17 @@ html {
     font-size: 40px;
   }
 
+  .about__title,
+  .work__title {
+    font-size: 28px;
+  }
+
+  .hero__description,
+  .about__description,
+  .work__description {
+    font-size: 16px;
+  }
+
   .projects__container {
     display: flex;
     gap: 20px;
@@ -282,6 +293,17 @@ html {
 @media (max-width: 768px) {
   .hero__title {
     font-size: 32px;
+  }
+
+  .about__title,
+  .work__title {
+    font-size: 24px;
+  }
+
+  .hero__description,
+  .about__description,
+  .work__description {
+    font-size: 15px;
   }
 
   .projects__container {
@@ -304,6 +326,17 @@ html {
   .hero__title {
     font-size: 24px;
   }
+
+  .about__title,
+  .work__title {
+    font-size: 20px;
+  }
+
+  .hero__description,
+  .about__description,
+  .work__description {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -311,18 +344,32 @@ html {
     font-size: 20px;
   }
 
+  .about__title,
+  .work__title {
+    font-size: 18px;
+  }
+
+  .hero__description,
+  .about__description,
+  .work__description {
+    font-size: 13px;
+  }
+
   .hero__button {
     margin-inline: auto;
   }
 
   .projects__container {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .projects__list {
-    width: 100%; 
-    max-width: 300px; /* ограничиваем ширину */
-    margin-inline: auto; /* центрируем */
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    transform: none;
+    justify-content: center;
   }
 }
 
