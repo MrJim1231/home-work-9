@@ -1,0 +1,81 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  background-color: $color-light-gray;
+  position: relative;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav {
+  padding-top: 80px;
+  margin-bottom: 143px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  &__link {
+    line-height: $line-height;
+    letter-spacing: 1.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+
+    &--active {
+      color: $color-dark-blue;
+    }
+  }
+
+  &__item:nth-last-child(3) {
+    margin-right: 10px;
+  }
+}
+
+.hero {
+  max-width: $container-secondary;
+  padding-bottom: 140px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: $line-height;
+    margin-bottom: 35px;
+  }
+
+  &__description {
+    line-height: $line-height;
+    padding-left: 2px;
+    color: $color-gray;
+    margin-bottom: 55px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: $color-dark-blue;
+    color: $color-white;
+    text-decoration: none;
+    line-height: $line-height;
+    letter-spacing: 1.7px;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 225px;
+    min-height: 65px;
+    width: fit-content;
+  }
+}
