@@ -118,11 +118,11 @@ html{
   letter-spacing:1.7px;
   text-align:center;
   text-transform:uppercase;
-  min-width:225px;
-  min-height:65px;
   width:-webkit-fit-content;
   width:-moz-fit-content;
   width:fit-content;
+  min-width:225px;
+  min-height:65px;
 }
 
 .about{
